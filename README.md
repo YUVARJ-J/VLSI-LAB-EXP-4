@@ -26,7 +26,9 @@ STEP:5 Select the Behavioural Simulation in the Source Window and click the chec
                 
 
 ## SR FLIPFLOP:
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/3fffb34d-7636-45a0-b810-153a2a9e4937)
+
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/9bc25f0c-eacc-48f2-a0a9-d8eb5b90711d)
+
 
 ## PROGRAM:
 module sr_ff(clk,q,rst,s,r);<br>
@@ -52,13 +54,13 @@ endmodule<br>
 
 ## OUTPUT:               
                    
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/b1415dba-d407-4604-9e71-950ce0278cb2)
-
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/c3b77772-5456-497c-9382-8db273e9448e)
 
 
 ## JK FLIPFLOP:
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/974ee6ec-6df1-4d94-bef6-e30b805ff7b8)
- 
+
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/f836cdf2-8f95-403b-b4b7-ed1a1fb8aec4)
+
 
 ## PROGRAM:
 module jk_ff(clk,q,rst,j,k);<br>
@@ -82,15 +84,12 @@ endmodule<br>
 
 ## OUTPUT:
 
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/8a3c0832-15af-4481-b653-fe9d78f204d9)
-
-
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/76d60cab-41f8-4e76-bc5c-2b9abb6eb335)
 
 
 ## T FLIPFLOP
 	
-
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/634ea0d3-4c4d-47cb-8e2a-97d8e4b4b31f)
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/af11bd82-5024-4f61-b501-94e2e9e5c93c)
 
 
 ## PROGRAM: 
@@ -112,11 +111,14 @@ endmodule
 
 ## OUTPUT
 
-  ![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/bbf94095-1cdb-4d94-bcc2-6f1dd591ddfa)
+ ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/4dd88f8c-dd4e-4dc8-82ba-68f30dc35ddd)
+
                 
 
 ## D FLIPFLOP:
- ![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/1be6a3f8-91a4-4b35-bccc-2fd8e29a90cf)
+
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/35cf7925-dc51-40b1-9e61-abef0abebf67)
+
 
 ## PROGRAM:
 module d_ff(clk,q,rst,d);<br>
@@ -132,7 +134,8 @@ end<br>
 endmodule<br>
 
 ## OUTPUT:
-![image](https://github.com/Udayabharathim/VLSI_EXPERIMENT_4/assets/160568654/e80b0a85-ba38-4673-b7e2-15acc056fe51)
+
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/5e737a39-bbf3-47b8-8597-b02e386c3145)
 
 
 
