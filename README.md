@@ -137,6 +137,46 @@ endmodule<br>
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/5e737a39-bbf3-47b8-8597-b02e386c3145)
 
+## MOD 10 COUNTER
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/f4343463-ce11-48a7-b325-44a0ef91db43)
+
+## PROGRAM
+module mod_10(clk,rst,out); <br>
+input clk,rst; <br>
+output reg[3:0]out;<br>
+always@(posedge clk)<br>
+begin<br>
+if(rst==1|out==9)<br>
+out=4'b0;<br>
+else<br>
+out=out+1;<br>
+end<br>
+endmodule<br>
+## OUTPUT
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/a0f63022-675d-4e0b-930b-c33e7b72960c)
+
+
+## UP-DOWN-COUNTER
+![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/bc7ff926-96b7-4e09-97f1-ac520feff5f3)
+## PROGRAM
+module updown_counter(clk,rst,ud,out); 
+input clk,rst,ud; 
+output reg[3:0]out;
+always@(posedge clk)
+begin
+if(rst==1)
+out=4'b0;
+else if (ud==1)
+out=out+1;
+else if(ud==0)
+out=out-1;
+end
+endmodule
+
+
+## OUTPUT
+![Screenshot 2024-04-02 134922](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/1a85e872-b2f8-4488-8d18-d9604d92bdde)
+
 
 
 ## RESULT:
