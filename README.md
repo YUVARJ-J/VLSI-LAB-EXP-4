@@ -19,6 +19,7 @@ STEP:5 Select the Behavioural Simulation in the Source Window and click the chec
 
 
 ## PROGRAM:
+```
 module sr_ff(clk,q,rst,s,r);
 input s,r,clk,rst;
 output reg q;<br>
@@ -37,7 +38,7 @@ endcase
 end
 end
 endmodule
-
+```
 ## OUTPUT:               
                    
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/c3b77772-5456-497c-9382-8db273e9448e)
@@ -49,6 +50,7 @@ endmodule
 
 
 ## PROGRAM:
+```
 module jk_ff(clk,q,rst,j,k);
 input j,k,clk,rst;
 output reg q;<br>
@@ -67,7 +69,7 @@ endcase
 end
 end
 endmodule
-
+```
 ## OUTPUT:
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/76d60cab-41f8-4e76-bc5c-2b9abb6eb335)
@@ -79,6 +81,7 @@ endmodule
 
 
 ## PROGRAM: 
+```
 module t_ff(clk,q,rst,t);
 input t,clk,rst;
 output reg q;
@@ -93,20 +96,19 @@ else
 q=~q;
 end
 endmodule
-
-
+```
 ## OUTPUT
 
  ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/4dd88f8c-dd4e-4dc8-82ba-68f30dc35ddd)
 
-                
-
+        
 ## D FLIPFLOP:
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/35cf7925-dc51-40b1-9e61-abef0abebf67)
 
 
 ## PROGRAM:
+```
 module d_ff(clk,q,rst,d);
 input d,clk,rst;
 output reg q;
@@ -118,7 +120,7 @@ else
 q=d;
 end
 endmodule
-
+```
 ## OUTPUT:
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/5e737a39-bbf3-47b8-8597-b02e386c3145)
@@ -127,7 +129,7 @@ endmodule
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/f4343463-ce11-48a7-b325-44a0ef91db43)
 
 ## PROGRAM
-
+```
 module mod_10(clk,rst,out); 
 input clk,rst; 
 output reg[3:0]out;
@@ -139,14 +141,14 @@ else
 count=count+1;
 end
 endmodule
-
+```
 ## OUTPUT
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/a0f63022-675d-4e0b-930b-c33e7b72960c)
-
 
 ## UP-DOWN-COUNTER
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/bc7ff926-96b7-4e09-97f1-ac520feff5f3)
 ## PROGRAM
+```
 module updown_counter(clk,rst,ud,count); 
 input clk,rst,ud; 
 output reg[3:0]count;
@@ -160,12 +162,9 @@ else if(ud==0)
 count=count-1;
 end
 endmodule
-
-
+```
 ## OUTPUT
 ![Screenshot 2024-04-02 134922](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/1a85e872-b2f8-4488-8d18-d9604d92bdde)
-
-
 
 ## RESULT:
 	The the simulation and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN is successfully verified using xilinx ISE.
