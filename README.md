@@ -19,26 +19,24 @@ STEP:5 Select the Behavioural Simulation in the Source Window and click the chec
 
 
 ## PROGRAM:
-module sr_ff(clk,q,rst,s,r);<br>
-input s,r,clk,rst;<br>
+module sr_ff(clk,q,rst,s,r);
+input s,r,clk,rst;
 output reg q;<br>
-always@(posedge clk)<br>
-begin<br>
-if(rst==1)<br>
-q=1'b0;<br>
-else<br>
-begin<br>
-case({s,r})<br>
-2'b00:q=q;<br>
-2'b01:q=1'b0;<br>
-2'b10:q=1'b1;<br>
-2'b11:q=1'bx;<br>
-endcase<br>
-end<br>
-end<br>
-endmodule<br>
-
-
+always@(posedge clk)
+begin
+if(rst==1)
+q=1'b0;
+else
+begin
+case({s,r})
+2'b00:q=q;
+2'b01:q=1'b0;
+2'b10:q=1'b1;
+2'b11:q=1'bx;
+endcase
+end
+end
+endmodule
 
 ## OUTPUT:               
                    
@@ -51,24 +49,24 @@ endmodule<br>
 
 
 ## PROGRAM:
-module jk_ff(clk,q,rst,j,k);<br>
-input j,k,clk,rst;<br>
+module jk_ff(clk,q,rst,j,k);
+input j,k,clk,rst;
 output reg q;<br>
-always@(posedge clk)<br>
-begin<br>
-if(rst==1)<br>
-q=1'b0;<br>
-else<br>
-begin<br>
-case({j,k})<br>
-2'b00:q=q;<br>
-2'b01:q=1'b0;<br>
-2'b10:q=1'b1;<br>
-2'b11:q=~q;<br>
-endcase<br>
-end<br>
-end<br>
-endmodule<br>
+always@(posedge clk)
+begin
+if(rst==1)
+q=1'b0;
+else
+begin
+case({j,k})
+2'b00:q=q;
+2'b01:q=1'b0;
+2'b10:q=1'b1;
+2'b11:q=~q;
+endcase
+end
+end
+endmodule
 
 ## OUTPUT:
 
@@ -81,19 +79,19 @@ endmodule<br>
 
 
 ## PROGRAM: 
-module t_ff(clk,q,rst,t);<br>
-input t,clk,rst;<br>
-output reg q;<br>
-always@(posedge clk)<br>
-begin<br>
-if(rst==1)<br>
-q=1'b0;<br>
-else<br>
-if(t==0)<br>
-q=q;<br>
-else<br>
-q=~q;<br>
-end<br>
+module t_ff(clk,q,rst,t);
+input t,clk,rst;
+output reg q;
+always@(posedge clk)
+begin
+if(rst==1)
+q=1'b0;
+else
+if(t==0)
+q=q;
+else
+q=~q;
+end
 endmodule
 
 
@@ -109,17 +107,17 @@ endmodule
 
 
 ## PROGRAM:
-module d_ff(clk,q,rst,d);<br>
-input d,clk,rst;<br>
-output reg q;<br>
-always@(posedge clk)<br>
+module d_ff(clk,q,rst,d);
+input d,clk,rst;
+output reg q;
+always@(posedge clk)
 begin<br>
-if(rst==1)<br>
-q=1'b0;<br>
-else<br>
-q=d;<br>
-end<br>
-endmodule<br>
+if(rst==1)
+q=1'b0;
+else
+q=d;
+end
+endmodule
 
 ## OUTPUT:
 
@@ -129,17 +127,19 @@ endmodule<br>
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/f4343463-ce11-48a7-b325-44a0ef91db43)
 
 ## PROGRAM
-module mod_10(clk,rst,out); <br>
-input clk,rst; <br>
-output reg[3:0]out;<br>
-always@(posedge clk)<br>
-begin<br>
-if(rst==1|out==9)<br>
-out=4'b0;<br>
-else<br>
-out=out+1;<br>
-end<br>
-endmodule<br>
+
+module mod_10(clk,rst,out); 
+input clk,rst; 
+output reg[3:0]out;
+always@(posedge clk)
+begin
+if(rst==1|count==9)
+count=4'b0;
+else
+count=count+1;
+end
+endmodule
+
 ## OUTPUT
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/a0f63022-675d-4e0b-930b-c33e7b72960c)
 
@@ -147,17 +147,17 @@ endmodule<br>
 ## UP-DOWN-COUNTER
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/bc7ff926-96b7-4e09-97f1-ac520feff5f3)
 ## PROGRAM
-module updown_counter(clk,rst,ud,out); 
+module updown_counter(clk,rst,ud,count); 
 input clk,rst,ud; 
-output reg[3:0]out;
+output reg[3:0]count;
 always@(posedge clk)
 begin
 if(rst==1)
 out=4'b0;
 else if (ud==1)
-out=out+1;
+count=count+1;
 else if(ud==0)
-out=out-1;
+count=count-1;
 end
 endmodule
 
@@ -168,5 +168,5 @@ endmodule
 
 
 ## RESULT:
-	The simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using VIVADO is successfully verified.
+	The the simulation and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN is successfully verified using xilinx ISE.
 
