@@ -13,18 +13,6 @@ STEP:4 Type the File Name and Click Next and then finish button. Type the code a
 STEP:5 Select the Behavioural Simulation in the Source Window and click the check syntax.<br>
  STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.<br>
 
-
-
-
-
-
-
-
-
-
-
-                
-
 ## SR FLIPFLOP:
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/9bc25f0c-eacc-48f2-a0a9-d8eb5b90711d)
