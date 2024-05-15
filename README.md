@@ -1,4 +1,7 @@
+EXPT:4
 # SIMULATE AND SYNTHESIS SR, JK, T, D - FLIPFLOP, COUNTER DESIGN USING VIVADO.
+DATE:02.04.2024
+     16.04.2024
 ## AIM: 
   To simulate and synthesis SR, JK, T, D - FLIPFLOP, COUNTER DESIGN using VIVADO.
 
@@ -6,13 +9,14 @@
  VIVADO 2023.2
 
 ## PROCEDURE:
+```
  STEP:1 Start the Vivado, Select and Name the New project.<br>
  STEP:2 Select the device family, device, package and speed. <br>
 STEP:3 Select new source in the New Project and select Verilog Module as the Source type.<br>
 STEP:4 Type the File Name and Click Next and then finish button. Type the code and save it.<br>
 STEP:5 Select the Behavioural Simulation in the Source Window and click the check syntax.<br>
  STEP:6 Click the simulation to simulate the program and give the inputs and verify the outputs as per the truth table.<br>
-
+```
 ## SR FLIPFLOP:
 
 ![image](https://github.com/Udayabharathim/VLSI-LAB-EXP-4/assets/160568654/9bc25f0c-eacc-48f2-a0a9-d8eb5b90711d)
